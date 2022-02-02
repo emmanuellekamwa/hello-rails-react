@@ -3,9 +3,9 @@ const LOAD_GREETING = 'helloRailsReact/greeting/LOAD_GREETING';
 const initialState = [];
 
 const reducer = (state = initialState, action) => {
-    switch (action, type) {
+    switch (action.type) {
         case LOAD_GREETING:
-            return action.payload.title
+            return action.payload.greetings
         default:
             return state;
     }
