@@ -90,3 +90,320 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 547ms (Views: 84.1ms | ActiveRecord: 0.0ms | Allocations: 2178)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-01 16:48:00 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/kamwa/.rvm/gems/ruby-2.7.2/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 73.7ms | Allocations: 217)
+Completed 200 OK in 93ms (Views: 76.1ms | Allocations: 838)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 17:11:59 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 100)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/kamwa/hello-rails-react/public/packs
+[Webpacker] Hash: cb03424d03548b5e6f0e
+Version: webpack 4.46.0
+Time: 49673ms
+Built at: 02/01/2022 5:13:22 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-19d3a16f0a63fe90dd4e.js  1.34 MiB       application  [emitted] [immutable]  application
+     js/application-19d3a16f0a63fe90dd4e.js.map  1.54 MiB       application  [emitted] [dev]        application
+         js/hello_react-d61b2db5fc1179b6659c.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-d61b2db5fc1179b6659c.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-aef74ab94d544d11a05d.js  1.22 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-aef74ab94d544d11a05d.js.map  1.41 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-19d3a16f0a63fe90dd4e.js js/application-19d3a16f0a63fe90dd4e.js.map
+Entrypoint hello_react = js/hello_react-d61b2db5fc1179b6659c.js js/hello_react-d61b2db5fc1179b6659c.js.map
+Entrypoint server_rendering = js/server_rendering-aef74ab94d544d11a05d.js js/server_rendering-aef74ab94d544d11a05d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 160 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 710 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.06 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 31 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 68560.0ms | Allocations: 22505)
+Completed 200 OK in 68794ms (Views: 68614.1ms | Allocations: 23608)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 17:13:44 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 3609)
+Completed 200 OK in 87ms (Views: 83.9ms | Allocations: 3996)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 17:49:54 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/kamwa/hello-rails-react/public/packs
+[Webpacker] Hash: 02811200e50d8c618e10
+Version: webpack 4.46.0
+Time: 18793ms
+Built at: 02/01/2022 5:50:36 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-732a97eceb61a3670456.js  1.38 MiB       application  [emitted] [immutable]  application
+     js/application-732a97eceb61a3670456.js.map  1.58 MiB       application  [emitted] [dev]        application
+         js/hello_react-d61b2db5fc1179b6659c.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-d61b2db5fc1179b6659c.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-d8dfa921c9c6a95bf642.js  1.26 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-d8dfa921c9c6a95bf642.js.map  1.45 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-732a97eceb61a3670456.js js/application-732a97eceb61a3670456.js.map
+Entrypoint hello_react = js/hello_react-d61b2db5fc1179b6659c.js js/hello_react-d61b2db5fc1179b6659c.js.map
+Entrypoint server_rendering = js/server_rendering-d8dfa921c9c6a95bf642.js js/server_rendering-d8dfa921c9c6a95bf642.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 197 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 710 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.06 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 32 hidden modules
+
+  Rendered static/index.html.erb within layouts/application (Duration: 40500.7ms | Allocations: 3227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40644.8ms | Allocations: 6410)
+Completed 200 OK in 40750ms (Views: 40720.7ms | Allocations: 7512)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 19:26:37 +0100
+  [1m[35m (24.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered static/index.html.erb within layouts/application (Duration: 21439.0ms | Allocations: 3319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25317.3ms | Allocations: 9006)
+Completed 200 OK in 26093ms (Views: 25424.4ms | ActiveRecord: 0.0ms | Allocations: 11523)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 19:58:48 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered static/index.html.erb within layouts/application (Duration: 11099.9ms | Allocations: 3090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11712.7ms | Allocations: 6304)
+Completed 200 OK in 12346ms (Views: 11987.3ms | Allocations: 7416)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 19:59:16 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 105.3ms | Allocations: 1805)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 213.3ms | Allocations: 4830)
+Completed 200 OK in 223ms (Views: 220.6ms | Allocations: 5217)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 20:36:46 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 277.8ms | Allocations: 1895)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 526.4ms | Allocations: 5106)
+Completed 200 OK in 792ms (Views: 671.0ms | Allocations: 6201)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 20:54:42 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered static/index.html.erb within layouts/application (Duration: 41646.9ms | Allocations: 3080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42531.9ms | Allocations: 6126)
+Completed 200 OK in 46114ms (Views: 42973.2ms | Allocations: 6648)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 21:54:50 +0100
+  [1m[35m (31.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered static/index.html.erb within layouts/application (Duration: 14073.2ms | Allocations: 3303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14620.2ms | Allocations: 8993)
+Completed 200 OK in 14772ms (Views: 14639.9ms | ActiveRecord: 0.0ms | Allocations: 11508)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 22:16:22 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered static/index.html.erb within layouts/application (Duration: 16844.5ms | Allocations: 3022)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17266.2ms | Allocations: 6065)
+Completed 200 OK in 17467ms (Views: 17300.4ms | Allocations: 6576)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 22:39:14 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 7066.1ms | Allocations: 1817)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12009.3ms | Allocations: 4851)
+Completed 200 OK in 14735ms (Views: 12610.2ms | Allocations: 5240)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 22:44:27 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"users/sign_in"}
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 1331.1ms | Allocations: 1816)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2485.3ms | Allocations: 4874)
+Completed 200 OK in 2959ms (Views: 2667.1ms | Allocations: 5205)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 08:24:28 +0100
+  [1m[35m (40.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 465.6ms | Allocations: 2050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1097.6ms | Allocations: 7741)
+Completed 200 OK in 1494ms (Views: 1240.0ms | ActiveRecord: 0.0ms | Allocations: 10255)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 08:40:21 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 3209.6ms | Allocations: 4965)
+  Rendered layout layouts/application.html.erb (Duration: 3210.3ms | Allocations: 5030)
+Completed 500 Internal Server Error in 3359ms (Allocations: 6104)
+
+
+  
+ActionView::Template::Error (Webpacker can't find index.js in /home/kamwa/hello-rails-react/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-732a97eceb61a3670456.js",
+  "application.js.map": "/packs/js/application-732a97eceb61a3670456.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-732a97eceb61a3670456.js"
+      ],
+      "js.map": [
+        "/packs/js/application-732a97eceb61a3670456.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-d61b2db5fc1179b6659c.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-d61b2db5fc1179b6659c.js.map"
+      ]
+    },
+    "server_rendering": {
+      "js": [
+        "/packs/js/server_rendering-d8dfa921c9c6a95bf642.js"
+      ],
+      "js.map": [
+        "/packs/js/server_rendering-d8dfa921c9c6a95bf642.js.map"
+      ]
+    }
+  },
+  "hello_react.js": "/packs/js/hello_react-d61b2db5fc1179b6659c.js",
+  "hello_react.js.map": "/packs/js/hello_react-d61b2db5fc1179b6659c.js.map",
+  "server_rendering.js": "/packs/js/server_rendering-d8dfa921c9c6a95bf642.js",
+  "server_rendering.js.map": "/packs/js/server_rendering-d8dfa921c9c6a95bf642.js.map"
+}
+):
+    1: <%= javascript_pack_tag 'index' %>
+    2: <%= react_component('App')%>
+  
+app/views/static/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2022-02-02 08:41:11 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 1942)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 213.0ms | Allocations: 5250)
+Completed 200 OK in 228ms (Views: 224.9ms | Allocations: 6438)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 09:05:37 +0100
+  [1m[35m (58.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered static/index.html.erb within layouts/application (Duration: 789.9ms | Allocations: 2049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1258.0ms | Allocations: 7743)
+Completed 200 OK in 1539ms (Views: 1320.8ms | ActiveRecord: 0.0ms | Allocations: 10258)
+
+
