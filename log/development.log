@@ -570,3 +570,96 @@ Processing by StaticController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering static/index.html.erb within layouts/application
 [Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: bf3440aaa3d72cca1aa3
+Version: webpack 4.46.0
+Time: 40221ms
+Built at: 02/02/2022 1:21:55 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-17c309f3d24a837d3f72.js  1.56 MiB       application  [emitted] [immutable]  application
+     js/application-17c309f3d24a837d3f72.js.map  1.74 MiB       application  [emitted] [dev]        application
+         js/hello_react-d61b2db5fc1179b6659c.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-d61b2db5fc1179b6659c.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-b1678bb8e49995b922d0.js  1.44 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-b1678bb8e49995b922d0.js.map  1.61 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-17c309f3d24a837d3f72.js js/application-17c309f3d24a837d3f72.js.map
+Entrypoint hello_react = js/hello_react-d61b2db5fc1179b6659c.js js/hello_react-d61b2db5fc1179b6659c.js.map
+Entrypoint server_rendering = js/server_rendering-b1678bb8e49995b922d0.js js/server_rendering-b1678bb8e49995b922d0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 216 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 710 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.06 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 66 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve '../redux/configureStore' in '/home/kamwa/hello-rails-react/app/javascript/components'
+ @ ./app/javascript/components/App.js 8:0-44 12:11-16
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+  Rendered static/index.html.erb within layouts/application (Duration: 70044.3ms | Allocations: 3433)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70563.0ms | Allocations: 9112)
+Completed 200 OK in 70907ms (Views: 70672.3ms | ActiveRecord: 0.0ms | Allocations: 11626)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 14:16:08 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 286adaf86c7c67e05c4e
+Version: webpack 4.46.0
+Time: 34996ms
+Built at: 02/02/2022 2:17:31 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-cbf27bcb9562f97ca59c.js  1.61 MiB       application  [emitted] [immutable]  application
+     js/application-cbf27bcb9562f97ca59c.js.map   1.8 MiB       application  [emitted] [dev]        application
+         js/hello_react-d61b2db5fc1179b6659c.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-d61b2db5fc1179b6659c.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4674e48284c3a60920e9.js  1.49 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4674e48284c3a60920e9.js.map  1.67 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-cbf27bcb9562f97ca59c.js js/application-cbf27bcb9562f97ca59c.js.map
+Entrypoint hello_react = js/hello_react-d61b2db5fc1179b6659c.js js/hello_react-d61b2db5fc1179b6659c.js.map
+Entrypoint server_rendering = js/server_rendering-4674e48284c3a60920e9.js js/server_rendering-4674e48284c3a60920e9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 216 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 710 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.06 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./app/javascript/redux/api.js] 1.58 KiB {application} {server_rendering} [built]
+[./app/javascript/redux/configureStore.js] 301 bytes {application} {server_rendering} [built]
+[./app/javascript/redux/greeting.js] 566 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/redux/configureStore.js
+Module not found: Error: Can't resolve 'react-thunk' in '/home/kamwa/hello-rails-react/app/javascript/redux'
+ @ ./app/javascript/redux/configureStore.js 2:0-32 7:53-58
+ @ ./app/javascript/components/App.js
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+  Rendered static/index.html.erb within layouts/application (Duration: 99439.3ms | Allocations: 3273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 109533.1ms | Allocations: 6358)
+Completed 200 OK in 111226ms (Views: 110179.3ms | Allocations: 6873)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-02 14:21:07 +0100
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 91.7ms | Allocations: 160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1168.5ms | Allocations: 3512)
+Completed 200 OK in 1720ms (Views: 1401.6ms | Allocations: 4612)
+
+
