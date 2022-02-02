@@ -407,3 +407,106 @@ Processing by StaticController#index as HTML
 Completed 200 OK in 1539ms (Views: 1320.8ms | ActiveRecord: 0.0ms | Allocations: 10258)
 
 
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 09:59:44 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"page"=>"greetings"}
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 23998c4a8d032e08e686
+Version: webpack 4.46.0
+Time: 49150ms
+Built at: 02/02/2022 10:01:16 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-8c8d7efeea30cca21d0c.js  1.42 MiB       application  [emitted] [immutable]  application
+     js/application-8c8d7efeea30cca21d0c.js.map  1.62 MiB       application  [emitted] [dev]        application
+         js/hello_react-d61b2db5fc1179b6659c.js  1.09 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-d61b2db5fc1179b6659c.js.map  1.26 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-fe5397c0e7acd9cd7864.js   1.3 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-fe5397c0e7acd9cd7864.js.map  1.49 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-8c8d7efeea30cca21d0c.js js/application-8c8d7efeea30cca21d0c.js.map
+Entrypoint hello_react = js/hello_react-d61b2db5fc1179b6659c.js js/hello_react-d61b2db5fc1179b6659c.js.map
+Entrypoint server_rendering = js/server_rendering-fe5397c0e7acd9cd7864.js js/server_rendering-fe5397c0e7acd9cd7864.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 216 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 710 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.06 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 37 hidden modules
+
+ERROR in ./app/javascript/components/Greeting.js
+Module not found: Error: Can't resolve 'react-redux' in '/home/kamwa/hello-rails-react/app/javascript/components'
+ @ ./app/javascript/components/Greeting.js 17:0-55 21:18-29
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+  Rendered static/index.html.erb within layouts/application (Duration: 85584.3ms | Allocations: 3216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85972.1ms | Allocations: 6258)
+Completed 200 OK in 86258ms (Views: 86039.7ms | Allocations: 6769)
+
+
+  [1m[35m (92.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6835469566630085430)[0m
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (71.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6835469566630085430)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (71.8ms)[0m  [1m[32mINSERT INTO "greetings" ("id", "greetings", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 1], ["greetings", "Good Morning"], ["created_at", "2022-02-02 09:25:53.064729"], ["updated_at", "2022-02-02 09:25:53.064729"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (0.5ms)[0m  [1m[32mINSERT INTO "greetings" ("id", "greetings", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 2], ["greetings", "Bonjour"], ["created_at", "2022-02-02 09:25:53.205901"], ["updated_at", "2022-02-02 09:25:53.205901"]]
+  [1m[36mTRANSACTION (13.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (76.8ms)[0m  [1m[32mINSERT INTO "greetings" ("id", "greetings", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 3], ["greetings", "Buenos Dias"], ["created_at", "2022-02-02 09:25:53.236473"], ["updated_at", "2022-02-02 09:25:53.236473"]]
+  [1m[36mTRANSACTION (55.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (77.5ms)[0m  [1m[32mINSERT INTO "greetings" ("id", "greetings", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 4], ["greetings", "Ǵuten Morgen"], ["created_at", "2022-02-02 09:25:53.386064"], ["updated_at", "2022-02-02 09:25:53.386064"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (35.4ms)[0m  [1m[32mINSERT INTO "greetings" ("id", "greetings", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", 5], ["greetings", "Ola"], ["created_at", "2022-02-02 09:25:53.487018"], ["updated_at", "2022-02-02 09:25:53.487018"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:36:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/greetings"):
+  
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:43:26 +0100
+Processing by GreetingsController#index as HTML
+  [1m[36mGreeting Load (54.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/greetings_controller.rb:3:in `index'
+Completed 200 OK in 26541ms (Views: 722.9ms | ActiveRecord: 8869.5ms | Allocations: 7539)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:46:50 +0100
+Processing by GreetingsController#index as HTML
+  [1m[36mGreeting Load (2.9ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/greetings_controller.rb:3:in `index'
+Completed 200 OK in 218ms (Views: 43.0ms | ActiveRecord: 2.9ms | Allocations: 1074)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:47:00 +0100
+Processing by GreetingsController#index as HTML
+  [1m[36mGreeting Load (4.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/greetings_controller.rb:3:in `index'
+Completed 200 OK in 22ms (Views: 1.1ms | ActiveRecord: 4.2ms | Allocations: 1069)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:47:08 +0100
+Processing by GreetingsController#index as HTML
+  [1m[36mGreeting Load (2.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/greetings_controller.rb:3:in `index'
+Completed 200 OK in 23ms (Views: 1.5ms | ActiveRecord: 2.7ms | Allocations: 1068)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-02-02 10:47:15 +0100
+Processing by GreetingsController#index as HTML
+  [1m[36mGreeting Load (3.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings"[0m
+  ↳ app/controllers/greetings_controller.rb:3:in `index'
+Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 3.6ms | Allocations: 1054)
+
+
