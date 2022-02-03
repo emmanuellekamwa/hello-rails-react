@@ -24,7 +24,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "@babel/core": "^7.16.12",
-    "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
     "stylelint": "^13.13.1",
