@@ -10,6 +10,7 @@
 - React
 - Redux
 - Webpacker
+- VsCode
 
 ## Getting Started
 
