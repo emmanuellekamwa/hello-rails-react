@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/microverse-blueviolet)
-
 ## Hello-Rails-React
 
 > The aim of this project was to build a hello world app using ruby on rails and react.
@@ -11,6 +9,7 @@
 - Redux
 - Webpacker
 - VsCode
+- Rubocop
 
 ## Getting Started
 
