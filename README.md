@@ -1,24 +1,47 @@
-# README
+![](https://img.shields.io/badge/microveerse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Hello-Rails-React
 
-Things you may want to cover:
+> The aim of this project was to build a hello world app using ruby on rails and react.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on rails
+- React
+- Redux
+- Webpacker
 
-* Configuration
+## Getting Started
+To have this project on your local machine just follow these steps
 
-* Database creation
+- Clone the repository using ̀https://github.com/emmanuellekamwa/hello-rails-react.g̀it
 
-* Database initialization
+- Browse into the project's directory by typing `cd hello-rails-react`
+-  To install all the dependencies, run `npm install`
+- To start the server run `rails s`
 
-* How to run the test suite
+## Author
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Emmanuelle Kamwa**
 
-* Deployment instructions
+-   Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+-   Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+-   Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
 
-* ...
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- Microverse
+
+## 📝 License
+
+This project is [Microverse](https://www.microverse.org/) licensed.
