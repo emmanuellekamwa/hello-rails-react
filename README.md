@@ -1,21 +1,21 @@
-![](https://img.shields.io/badge/microveerse-blueviolet)
-
 ## Hello-Rails-React
 
 > The aim of this project was to build a hello world app using ruby on rails and react.
 
 ## Built With
 
-- Ruby on rails
+- Ruby on Rails
 - React
 - Redux
 - Webpacker
+- VsCode
+- Rubocop
 
 ## Getting Started
-To have this project on your local machine just follow these steps
 
-- Clone the repository using ̀https://github.com/emmanuellekamwa/hello-rails-react.g̀it
+To have this project on your local machine, just follow these steps
 
+- Clone the project using `https://github.com/emmanuellekamwa/hello-rails-react.git`
 - Browse into the project's directory by typing `cd hello-rails-react`
 -  To install all the dependencies, run `npm install`
 - To start the server run `rails s`
